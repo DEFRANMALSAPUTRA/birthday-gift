@@ -3,6 +3,8 @@ function showGift() {
     const videoModal = document.getElementById('video-modal');
     const video = document.getElementById('birthday-video');
     
+    video.src = "img/lebah.mp4"; // Set the video source
+
     giftElement.classList.remove('hidden');
     videoModal.classList.remove('hidden');
     
@@ -77,6 +79,14 @@ function enlargePhoto(img) {
             closeModal();
         }
     });
+}
+
+function enlargeVideo(video) {
+    const videoModal = document.getElementById('video-modal');
+    const birthdayVideo = document.getElementById('birthday-video');
+    birthdayVideo.src = video.src;
+    videoModal.classList.remove('hidden');
+    birthdayVideo.play();
 }
 
 function closeModal() {

@@ -184,7 +184,17 @@ body {
     transition: transform 0.3s;
 }
 
-.photos img:hover {
+.photos video {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.photos img:hover,
+.photos video:hover {
     transform: scale(1.1);
 }
 
