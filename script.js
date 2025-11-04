@@ -27,14 +27,15 @@ function showGift() {
 }
 
 function createConfetti() {
-    for (let i = 0; i < 50; i++) {
+    const confettiColors = ['#e91e63', '#ec407a', '#f06292', '#f48fb1', '#f8bbd0', '#ffffff'];
+    for (let i = 0; i < 100; i++) { // Increased confetti count
         const confetti = document.createElement('div');
         confetti.classList.add('confetti');
         
         confetti.style.left = Math.random() * 100 + 'vw';
         confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
         confetti.style.opacity = Math.random();
-        confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+        confetti.style.backgroundColor = confettiColors[Math.floor(Math.random() * confettiColors.length)];
         
         document.body.appendChild(confetti);
         
@@ -275,4 +276,4 @@ document.addEventListener('DOMContentLoaded', function() {
     video.addEventListener('error', function(e) {
         console.log("Error video:", video.error);
     });
-}); 
+});

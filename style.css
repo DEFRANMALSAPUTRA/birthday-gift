@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    background-color: #fce4ec; /* Soft pink background */
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@ body {
 }
 
 .birthday-card {
-    background: rgba(255, 255, 255, 0.9);
+    background: #ffffff; /* White card */
     border-radius: 20px;
     padding: 40px;
     text-align: center;
@@ -29,7 +29,7 @@ body {
 
 .title {
     font-family: 'Pacifico', cursive;
-    color: #ff4b6e;
+    color: #e91e63; /* Hot pink title */
     margin-bottom: 20px;
     font-size: 2.8em;
     letter-spacing: 1px;
@@ -37,7 +37,7 @@ body {
 
 .name {
     font-family: 'Pacifico', cursive;
-    color: #ff758c;
+    color: #ec407a; /* Lighter pink name */
     margin-bottom: 30px;
     font-size: 2.2em;
 }
@@ -45,7 +45,7 @@ body {
 .message {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    color: #666;
+    color: #333; /* Darker text for readability */
     line-height: 1.6;
     margin-bottom: 30px;
 }
@@ -570,4 +570,4 @@ body {
 
 #video-modal.hidden {
     display: none;
-} 
+}
